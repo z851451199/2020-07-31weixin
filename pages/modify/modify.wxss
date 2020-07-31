@@ -1,0 +1,88 @@
+text{
+  font-family: '宋体';
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+}
+/* 页面搜索部分 */
+.search{
+  width: 100%;
+  margin:20rpx 0 20rpx 0;
+}
+.modify-input{
+  width: 90%;
+  padding:10rpx 0 10rpx 50rpx ;
+  font-size: 28rpx;
+  background: rgb(202, 202, 201);
+  margin: 0 auto;
+}
+/* 我的品牌（选中标签展示） */
+.show-choice{
+  float: left;
+}
+.show-choice text{
+  float: left;
+  font-size: 35rpx;
+  padding: 10rpx;
+}
+.swc-main{
+  width: 85%;
+  margin-top:20rpx ;
+  float: left;
+}
+.swc-main .swc-btn{
+  float: left;
+  margin:0 5rpx 5rpx 15rpx ;
+  border-radius: 25rpx;
+  position: relative;
+  padding:5rpx 60rpx 5rpx 30rpx;
+  color: rgb(231, 34, 7);
+  border:1rpx solid rgb(231, 34, 7);
+}
+.swc-btn text{
+  font-size:28rpx ;
+}
+.swc-main .swc-btn .modify-icon{
+  position: absolute;
+  right: 10%;
+  top: 19%;
+}
+/* 热门品牌 */
+.modify-choice{
+  width: 100%;
+  float: left;
+  margin-top:30rpx ;
+}
+.modify-choice>text{
+  float: left;
+  font-size: 35rpx;
+  padding: 10rpx;
+  
+}
+.swc-text{
+  float: left;
+  margin:0 5rpx 15rpx 15rpx ;
+  border-radius: 25rpx;
+  position: relative;
+  padding:8rpx 30rpx;
+  font-size:28rpx ;
+  color:rgb(149, 149, 150);
+  border:1rpx solid rgb(149, 149, 150);
+}
+/* 页面跳转，选行业 */
+.url-trade{
+  float: left;
+  margin:30rpx 0 20rpx 10rpx ;
+}
+/* 页面信息提交 */
+.bottom{
+  width: 95%;
+  /* float: left; */
+  margin:0rpx auto;
+}
+.submit{
+  background: rgb(236, 57, 13);
+  color: white;
+  font-weight: 200;
+  font-size:26rpx ;
+}

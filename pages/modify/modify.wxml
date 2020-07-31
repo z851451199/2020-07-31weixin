@@ -1,0 +1,34 @@
+<view class="modify-page">
+  <view class="search">
+    <view class="weui-cell weui-cell_input">
+        <input class="weui-input modify-input" type="text" placeholder="输入品牌、公司简称搜索" />
+    </view>
+  </view>
+  <!-- 展示已选择数据 -->
+  <view class="show-choice">
+    <text>我的品牌/公司</text>
+    <view class="swc-main">
+      <view wx:for="{{mineBrand}}"  class="swc-btn" bindtap="removeChoice" data-index = '{{index}}' wx:if = "{{mineBrand != ''}}">
+        <text >{{item}}</text>
+        <icon class="progress-cancel modify-icon" type="cancel"></icon>
+      </view>
+    </view>
+  </view>
+  <!-- 选择热门品牌 -->
+  <view class="modify-choice">
+    <text style="font-family: '宋体';">热门品牌/公司</text>
+    <view class="swc-main">
+      <text bindtap="choseModify" data-index = '{{index}}' class="swc-text" wx:for="{{hotBrand}}">{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 跳转选行业 -->
+  <view class="url-trade">
+    <navigator url="/pages/setting/setting?trademark={{mineBrand}}&tdID={{tdID}}&tdlID={{tdlID}}" class="head-modify" style="color: rgb(231, 34, 7);">我没有品牌/公司，去选行业 >></navigator>
+  </view>
+  <!-- 页面信息提交 -->
+  <view class="bottom">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <button formType="submit" class="submit" style="width:100%;height:100%;">完成</button>
+    </form>
+  </view>
+</view>
